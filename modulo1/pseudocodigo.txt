@@ -1,0 +1,14 @@
+ALGORITMO TabuadaDoNove
+VAR
+    n, dezena, unidade, resultado: INTEIRO
+INICIO
+    ESCREVA("Digite um valor para multiplicar por 9: ")
+    LEIA(n)
+    
+    // Processamento baseado nas regras do truque
+    dezena <- n - 1
+    unidade <- 10 - n
+    resultado <- (dezena * 10) + unidade
+    
+    ESCREVA("O resultado de 9 x ", n, " é: ", resultado)
+FIM
